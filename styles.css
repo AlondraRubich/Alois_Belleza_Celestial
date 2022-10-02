@@ -1,0 +1,191 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+body{
+    text-align: center;
+    font-family: sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+    margin-right: 10px;
+}
+.logo{
+    margin-left: 30px;
+}
+.logo img {
+    height: 60px;
+}
+.logo a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.navbar a{
+    display: block;
+    padding: 20px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar a:hover{
+    background: rgb(69, 68, 68);
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    height: 65px;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.header {
+    height: 60vh !important;
+    background: url(https://veronicachic.com/imagenes/make-up.jpg) no-repeat center;
+    background-size: cover;
+}
+.title{
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 35px;
+    color: white;
+    padding: 0 100px;
+}
+.btn{
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid pink;
+    color: white;
+    text-decoration: none;
+    background: orchid;
+    border-radius: 1rem;
+}
+.btn:hover{
+    background: none;
+}
+.btn-home{
+    display: flex;
+}
+
+.btn-home a{
+    margin: 0 10px;
+}
+
+.content{
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.saw {
+    padding: 30px;
+    
+    padding-top: 50px;
+    background: gray;
+}
+
+.box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box-container .box{
+    height: 11rem;
+    width: 17rem;
+    background: black;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0, 0,.5);
+    margin: 2rem;
+}
+
+.box-container .box i {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    background: orchid;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.box-container .box h3{
+    font-size: 20px;
+    color: orchid;
+}
+
+.box-container .box p {
+    font-size: 10px;
+    padding: 0 15px;
+}
+
+.about {
+    background: darkslategray;
+}
+
+.price {
+    background: url("https://gestion.pe/resizer/YiSRojerLLTmNDHG1v_kHjjlEdc=/980x0/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/GGIYSNORNNDULHFNU6CIIWH4Q4.png") no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.contact {
+    padding-top: 20px;
+    background:  black;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 1200px){
+    .box-container{
+        font-size: 20px;
+    }
+    p{
+        font-size: 20px;
+    }
+    .title{
+        margin-bottom:0 ;
+        font-size: 40px;
+    }
+    .saw{
+        height: 120vh;
+    }
+    .logo{
+        height: 10px;
+    }
+    .navbar{
+        visibility: hidden;
+    }
+    .wpp{
+        visibility: visible;
+    }
+}
